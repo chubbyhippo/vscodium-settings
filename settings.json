@@ -1,1 +1,573 @@
-
+{
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.lineHeight": 1.2,
+  "files.autoSave": "afterDelay",
+  "numberedBookmarks.navigateThroughAllFiles": "replace",
+  "telemetry.telemetryLevel": "off",
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.showcmd": true,
+  "vim.smartRelativeLine": true,
+  "vim.sneak": true,
+  "vim.surround": true,
+  "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
+  "workbench.colorTheme": "Kimbie Dark",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["java.test.goToTest"],
+      "when": "resourceExtname == '.java'"
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["java.test.goToTestSubject"],
+      "when": "resourceExtname == '.java' && resourceFilename.toLowerCase() =~ /test/"
+    },
+    {
+      "before": ["n"],
+      "after": ["n", "z", "z", "z", "v"]
+    },
+    {
+      "before": ["N"],
+      "after": ["N", "z", "z", "z", "v"]
+    },
+    {
+      "before": ["<c-d>"],
+      "after": ["<c-d>", "z", "z"]
+    },
+    {
+      "before": ["<c-u>"],
+      "after": ["<c-u>", "z", "z"]
+    },
+    {
+      "before": ["<c-h>"],
+      "after": ["<c-w>", "h"]
+    },
+    {
+      "before": ["<c-j>"],
+      "after": ["<c-w>", "j"]
+    },
+    {
+      "before": ["<c-k>"],
+      "after": ["<c-w>", "k"]
+    },
+    {
+      "before": ["<c-l>"],
+      "after": ["<c-w>", "l"]
+    },
+    {
+      "before": ["-"],
+      "after": ["<c-w>", "-"]
+    },
+    {
+      "before": ["="],
+      "after": ["<c-w>", "+"]
+    },
+    {
+      "before": ["_"],
+      "after": ["<c-w>", "<"]
+    },
+    {
+      "before": ["+"],
+      "after": ["<c-w>", ">"]
+    },
+    {
+      "before": ["]"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["["],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["<leader>", ".", "k"],
+      "commands": ["workbench.action.openGlobalKeybindings"]
+    },
+    {
+      "before": ["<leader>", ".", "s"],
+      "commands": ["workbench.action.openSettingsJson"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "d", "h"],
+      "commands": [":noh"]
+    },
+    {
+      "before": ["<leader>", "d", "m"],
+      "commands": ["numberedBookmarks.clearFromAllFiles"]
+    },
+    {
+      "before": ["<leader>", "a", "c"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<leader>", "a", "d"],
+      "commands": ["workbench.view.debug"]
+    },
+    {
+      "before": ["<leader>", "a", "c"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<leader>", "a", "d"],
+      "commands": ["workbench.view.debug"]
+    },
+    {
+      "before": ["<leader>", "a", "g"],
+      "commands": ["gradleDefaultProjectsView.focus"]
+    },
+    {
+      "before": ["<leader>", "a", "m"],
+      "commands": ["mavenProjects.focus"]
+    },
+    {
+      "before": ["<leader>", "a", "p"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "a", "P"],
+      "commands": ["workbench.panel.markers.view.focus"]
+    },
+    {
+      "before": ["<leader>", "a", "s"],
+      "commands": ["outline.focus"]
+    },
+    {
+      "before": ["<leader>", "a", "t"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    {
+      "before": ["<leader>", "a", "T"],
+      "commands": ["testing.showMostRecentOutput"]
+    },
+    {
+      "before": ["<leader>", "e", "c"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.constant"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "e", "f"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.field"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "e", "m"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.function"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "e", "p"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.introduce"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "e", "v"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.variable"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "e", "V"],
+      "commands": ["workbench.action.openSettings", "settings.switchToJSON"]
+    },
+    {
+      "before": ["<leader>", "i", "n"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.inline"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "g", "p"],
+      "commands": ["git.pull"]
+    },
+    {
+      "before": ["<leader>", "g", "P"],
+      "commands": ["git.push"]
+    },
+    {
+      "before": ["<leader>", "f", "o"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["<leader>", "g", "p"],
+      "commands": ["git.pull"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "commands": [
+        "workbench.action.closeSidebar",
+        "workbench.action.closePanel"
+      ]
+    },
+    {
+      "before": ["<leader>", "m"],
+      "commands": ["numberedBookmarks.listFromAllFiles"]
+    },
+    {
+      "before": ["<leader>", "o", "i"],
+      "commands": ["editor.action.organizeImports"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": [":q"]
+    },
+    {
+      "before": ["<leader>", "r", "c"],
+      "commands": ["testing.coverageAtCursor"]
+    },
+    {
+      "before": ["<leader>", "r", "e"],
+      "commands": ["editor.action.refactor"]
+    },
+    {
+      "before": ["<leader>", "r", "n"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "r", "r"],
+      "commands": ["java.debug.runJavaFile"],
+      "when": "editorLangId == java"
+    },
+    {
+      "before": ["<leader>", "r", "t"],
+      "commands": ["testing.runAtCursor"]
+    },
+    {
+      "before": ["<leader>", "r", "u"],
+      "commands": ["workbench.debug.welcome.focus"]
+    },
+    {
+      "before": ["<leader>", "r", "w"],
+      "commands": ["workbench.action.replaceInFiles"]
+    },
+    {
+      "before": ["<leader>", "s", "a"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<leader>", "s", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "s", "s"],
+      "commands": ["workbench.action.showAllSymbols"]
+    },
+    {
+      "before": ["<leader>", "s", "t"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["editor.debug.action.toggleBreakpoint"]
+    },
+    {
+      "before": ["<leader>", "<leader>"],
+      "after": ["<c-^>"]
+    },
+    {
+      "before": ["<Tab>"],
+      "after": ["g", "t"]
+    },
+    {
+      "before": ["<s-Tab>"],
+      "after": ["g", "T"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["J"],
+      "after": ["}"]
+    },
+    {
+      "before": ["H"],
+      "after": ["{"]
+    },
+    {
+      "before": ["m", "0"],
+      "commands": ["numberedBookmarks.toggleBookmark0"]
+    },
+    {
+      "before": ["'", "0"],
+      "commands": ["numberedBookmarks.jumpToBookmark0"]
+    },
+    {
+      "before": ["m", "1"],
+      "commands": ["numberedBookmarks.toggleBookmark1"]
+    },
+    {
+      "before": ["'", "1"],
+      "commands": ["numberedBookmarks.jumpToBookmark1"]
+    },
+    {
+      "before": ["m", "2"],
+      "commands": ["numberedBookmarks.toggleBookmark2"]
+    },
+    {
+      "before": ["'", "2"],
+      "commands": ["numberedBookmarks.jumpToBookmark2"]
+    },
+    {
+      "before": ["m", "3"],
+      "commands": ["numberedBookmarks.toggleBookmark3"]
+    },
+    {
+      "before": ["'", "3"],
+      "commands": ["numberedBookmarks.jumpToBookmark3"]
+    },
+    {
+      "before": ["m", "4"],
+      "commands": ["numberedBookmarks.toggleBookmark4"]
+    },
+    {
+      "before": ["'", "4"],
+      "commands": ["numberedBookmarks.jumpToBookmark4"]
+    },
+    {
+      "before": ["m", "5"],
+      "commands": ["numberedBookmarks.toggleBookmark5"]
+    },
+    {
+      "before": ["'", "5"],
+      "commands": ["numberedBookmarks.jumpToBookmark5"]
+    },
+    {
+      "before": ["m", "6"],
+      "commands": ["numberedBookmarks.toggleBookmark6"]
+    },
+    {
+      "before": ["'", "6"],
+      "commands": ["numberedBookmarks.jumpToBookmark6"]
+    },
+    {
+      "before": ["m", "7"],
+      "commands": ["numberedBookmarks.toggleBookmark7"]
+    },
+    {
+      "before": ["'", "7"],
+      "commands": ["numberedBookmarks.jumpToBookmark7"]
+    },
+    {
+      "before": ["m", "8"],
+      "commands": ["numberedBookmarks.toggleBookmark8"]
+    },
+    {
+      "before": ["'", "8"],
+      "commands": ["numberedBookmarks.jumpToBookmark8"]
+    },
+    {
+      "before": ["m", "9"],
+      "commands": ["numberedBookmarks.toggleBookmark9"]
+    },
+    {
+      "before": ["'", "9"],
+      "commands": ["numberedBookmarks.jumpToBookmark9"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["J"],
+      "after": ["}"]
+    },
+    {
+      "before": ["H"],
+      "after": ["{"]
+    },
+    {
+      "before": ["`"],
+      "after": ["S", "`"]
+    },
+    {
+      "before": ["'"],
+      "after": ["S", "'"]
+    },
+    {
+      "before": ["\""],
+      "after": ["S", "\""]
+    },
+    {
+      "before": ["("],
+      "after": ["S", "("]
+    },
+    {
+      "before": [")"],
+      "after": ["S", ")"]
+    },
+    {
+      "before": ["["],
+      "after": ["S", "["]
+    },
+    {
+      "before": ["]"],
+      "after": ["S", "]"]
+    },
+    {
+      "before": ["{"],
+      "after": ["S", "{"]
+    },
+    {
+      "before": ["}"],
+      "after": ["S", "}"]
+    },
+    {
+      "before": ["<leader>", "e", "c"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.constant"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "e", "f"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.field"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "e", "m"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.function"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "e", "p"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.introduce"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "e", "v"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.variable"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "i", "n"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.inline"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "r", "e"],
+      "commands": ["editor.action.refactor"]
+    },
+    {
+      "before": ["<leader>", "r", "w"],
+      "commands": ["workbench.action.replaceInFiles"]
+    },
+    {
+      "before": ["<leader>", "s", "t"],
+      "commands": ["workbench.action.findInFiles"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-b>": false,
+    "<C-c>": true,
+    "<C-e>": false,
+    "<C-r>": true,
+    "<C-v>": true,
+    "<C-x>": false
+  },
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
