@@ -1,14 +1,14 @@
 #!/usr/bin/env sh
 
 # keybindings
-code --force --install-extension vscodevim.vim
+codium --force --install-extension vscodevim.vim
 # sonarqube
-code --force --install-extension SonarSource.sonarlint-vscode
+codium --force --install-extension SonarSource.sonarlint-vscode
 # git
-code --force --install-extension eamodio.gitlens
+codium --force --install-extension eamodio.gitlens
 # numbered bookmark
-code --force --install-extension alefragnani.numbered-bookmarks
+codium --force --install-extension alefragnani.numbered-bookmarks
 # docker
-code --force --install-extension ms-azuretools.vscode-docker
+codium --force --install-extension ms-azuretools.vscode-docker
 # yaml
-code --force --install-extension redhat.vscode-yaml
+codium --force --install-extension redhat.vscode-yaml
