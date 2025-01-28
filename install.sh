@@ -54,4 +54,4 @@ elif [ "$(command -v wget)" ]; then
 fi
 
 # Install basic VSCode extensions by executing a remote script
-curl -ks https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/main/install-extensions.sh | /usr/bin/env sh
+curl -k https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/main/install-extensions.sh | /usr/bin/env sh
