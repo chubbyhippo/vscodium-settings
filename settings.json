@@ -23,34 +23,60 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["g", "i"],
-      "commands": ["editor.action.goToImplementation"]
+      "before": ["'", "0"],
+      "commands": ["numberedBookmarks.jumpToBookmark0"]
     },
     {
-      "before": ["g", "t"],
-      "commands": ["java.test.goToTest"],
-      "when": "resourceExtname == '.java'"
+      "before": ["'", "1"],
+      "commands": ["numberedBookmarks.jumpToBookmark1"]
     },
     {
-      "before": ["g", "t"],
-      "commands": ["java.test.goToTestSubject"],
-      "when": "resourceExtname == '.java' && resourceFilename.toLowerCase() =~ /test/"
+      "before": ["'", "2"],
+      "commands": ["numberedBookmarks.jumpToBookmark2"]
     },
     {
-      "before": ["n"],
-      "after": ["n", "z", "z", "z", "v"]
+      "before": ["'", "3"],
+      "commands": ["numberedBookmarks.jumpToBookmark3"]
     },
     {
-      "before": ["N"],
-      "after": ["N", "z", "z", "z", "v"]
+      "before": ["'", "4"],
+      "commands": ["numberedBookmarks.jumpToBookmark4"]
+    },
+    {
+      "before": ["'", "5"],
+      "commands": ["numberedBookmarks.jumpToBookmark5"]
+    },
+    {
+      "before": ["'", "6"],
+      "commands": ["numberedBookmarks.jumpToBookmark6"]
+    },
+    {
+      "before": ["'", "7"],
+      "commands": ["numberedBookmarks.jumpToBookmark7"]
+    },
+    {
+      "before": ["'", "8"],
+      "commands": ["numberedBookmarks.jumpToBookmark8"]
+    },
+    {
+      "before": ["'", "9"],
+      "commands": ["numberedBookmarks.jumpToBookmark9"]
+    },
+    {
+      "before": ["+"],
+      "after": ["<c-w>", ">"]
+    },
+    {
+      "before": ["-"],
+      "after": ["<c-w>", "-"]
+    },
+    {
+      "before": ["<Tab>"],
+      "after": ["g", "t"]
     },
     {
       "before": ["<c-d>"],
       "after": ["<c-d>", "z", "z"]
-    },
-    {
-      "before": ["<c-u>"],
-      "after": ["<c-u>", "z", "z"]
     },
     {
       "before": ["<c-h>"],
@@ -69,28 +95,8 @@
       "after": ["<c-w>", "l"]
     },
     {
-      "before": ["-"],
-      "after": ["<c-w>", "-"]
-    },
-    {
-      "before": ["="],
-      "after": ["<c-w>", "+"]
-    },
-    {
-      "before": ["_"],
-      "after": ["<c-w>", "<"]
-    },
-    {
-      "before": ["+"],
-      "after": ["<c-w>", ">"]
-    },
-    {
-      "before": ["]"],
-      "commands": ["editor.action.marker.next"]
-    },
-    {
-      "before": ["["],
-      "commands": ["editor.action.marker.prev"]
+      "before": ["<c-u>"],
+      "after": ["<c-u>", "z", "z"]
     },
     {
       "before": ["<leader>", ".", "k"],
@@ -105,16 +111,20 @@
       "commands": ["workbench.action.toggleZenMode"]
     },
     {
-      "before": ["<leader>", "b"],
-      "commands": ["workbench.action.quickOpen"]
+      "before": ["<leader>", "<leader>"],
+      "after": ["<c-^>"]
     },
     {
-      "before": ["<leader>", "d", "h"],
-      "commands": [":noh"]
+      "before": ["<leader>", "a", "P"],
+      "commands": ["workbench.panel.markers.view.focus"]
     },
     {
-      "before": ["<leader>", "d", "m"],
-      "commands": ["numberedBookmarks.clearFromAllFiles"]
+      "before": ["<leader>", "a", "T"],
+      "commands": ["testing.showMostRecentOutput"]
+    },
+    {
+      "before": ["<leader>", "a", "c"],
+      "commands": ["workbench.view.scm"]
     },
     {
       "before": ["<leader>", "a", "c"],
@@ -123,10 +133,6 @@
     {
       "before": ["<leader>", "a", "d"],
       "commands": ["workbench.view.debug"]
-    },
-    {
-      "before": ["<leader>", "a", "c"],
-      "commands": ["workbench.view.scm"]
     },
     {
       "before": ["<leader>", "a", "d"],
@@ -149,10 +155,6 @@
       "commands": ["workbench.view.explorer"]
     },
     {
-      "before": ["<leader>", "a", "P"],
-      "commands": ["workbench.panel.markers.view.focus"]
-    },
-    {
       "before": ["<leader>", "a", "s"],
       "commands": ["outline.focus"]
     },
@@ -161,8 +163,20 @@
       "commands": ["workbench.action.terminal.toggleTerminal"]
     },
     {
-      "before": ["<leader>", "a", "T"],
-      "commands": ["testing.showMostRecentOutput"]
+      "before": ["<leader>", "b"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "d", "h"],
+      "commands": [":noh"]
+    },
+    {
+      "before": ["<leader>", "d", "m"],
+      "commands": ["numberedBookmarks.clearFromAllFiles"]
+    },
+    {
+      "before": ["<leader>", "e", "V"],
+      "commands": ["workbench.action.openSettings", "settings.switchToJSON"]
     },
     {
       "before": ["<leader>", "e", "c"],
@@ -220,31 +234,21 @@
       ]
     },
     {
-      "before": ["<leader>", "e", "V"],
-      "commands": ["workbench.action.openSettings", "settings.switchToJSON"]
+      "before": ["<leader>", "f", "o"],
+      "commands": ["editor.action.formatDocument"]
     },
     {
-      "before": ["<leader>", "i", "n"],
-      "commands": [
-        {
-          "command": "editor.action.codeAction",
-          "args": {
-            "kind": "refactor.inline"
-          }
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "g", "p"],
-      "commands": ["git.pull"]
+      "before": ["<leader>", "f", "o"],
+      "commands": ["calva-fmt.formatCurrentForm"],
+      "when": "editorLangId == clojure"
     },
     {
       "before": ["<leader>", "g", "P"],
       "commands": ["git.push"]
     },
     {
-      "before": ["<leader>", "f", "o"],
-      "commands": ["editor.action.formatDocument"]
+      "before": ["<leader>", "g", "p"],
+      "commands": ["git.pull"]
     },
     {
       "before": ["<leader>", "g", "p"],
@@ -258,12 +262,23 @@
       ]
     },
     {
+      "before": ["<leader>", "i", "n"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.inline"
+          }
+        }
+      ]
+    },
+    {
       "before": ["<leader>", "m"],
       "commands": ["numberedBookmarks.listFromAllFiles"]
-    },    {
+    },
+    {
       "before": ["<leader>", "n", "d"],
       "commands": ["explorer.newFolder"]
-
     },
     {
       "before": ["<leader>", "n", "f"],
@@ -311,12 +326,24 @@
       "commands": ["workbench.action.showCommands"]
     },
     {
+      "before": ["<leader>", "s", "d"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
       "before": ["<leader>", "s", "f"],
       "commands": ["workbench.action.quickOpen"]
     },
     {
+      "before": ["<leader>", "s", "i"],
+      "commands": ["editor.action.previewDeclaration"]
+    },
+    {
       "before": ["<leader>", "s", "k"],
       "commands": ["workbench.action.toggleScreencastMode"]
+    },
+    {
+      "before": ["<leader>", "s", "p"],
+      "commands": ["editor.action.triggerParameterHints"]
     },
     {
       "before": ["<leader>", "s", "s"],
@@ -335,24 +362,16 @@
       "commands": ["workbench.action.toggleScreencastMode"]
     },
     {
-      "before": ["<leader>", "<leader>"],
-      "after": ["<c-^>"]
-    },
-    {
-      "before": ["<Tab>"],
-      "after": ["g", "t"]
-    },
-    {
       "before": ["<s-Tab>"],
       "after": ["g", "T"]
     },
     {
-      "before": ["H"],
-      "after": ["^"]
+      "before": ["="],
+      "after": ["<c-w>", "+"]
     },
     {
-      "before": ["L"],
-      "after": ["$"]
+      "before": ["H"],
+      "after": ["^"]
     },
     {
       "before": ["J"],
@@ -363,84 +382,82 @@
       "after": ["{"]
     },
     {
-      "before": ["m", "0"],
-      "commands": ["numberedBookmarks.toggleBookmark0"]
+      "before": ["L"],
+      "after": ["$"]
     },
     {
-      "before": ["'", "0"],
-      "commands": ["numberedBookmarks.jumpToBookmark0"]
+      "before": ["N"],
+      "after": ["N", "z", "z", "z", "v"]
+    },
+    {
+      "before": ["["],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["_"],
+      "after": ["<c-w>", "<"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["java.test.goToTest"],
+      "when": "resourceExtname == '.java'"
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["java.test.goToTestSubject"],
+      "when": "resourceExtname == '.java' && resourceFilename.toLowerCase() =~ /test/"
+    },
+    {
+      "before": ["m", "0"],
+      "commands": ["numberedBookmarks.toggleBookmark0"]
     },
     {
       "before": ["m", "1"],
       "commands": ["numberedBookmarks.toggleBookmark1"]
     },
     {
-      "before": ["'", "1"],
-      "commands": ["numberedBookmarks.jumpToBookmark1"]
-    },
-    {
       "before": ["m", "2"],
       "commands": ["numberedBookmarks.toggleBookmark2"]
-    },
-    {
-      "before": ["'", "2"],
-      "commands": ["numberedBookmarks.jumpToBookmark2"]
     },
     {
       "before": ["m", "3"],
       "commands": ["numberedBookmarks.toggleBookmark3"]
     },
     {
-      "before": ["'", "3"],
-      "commands": ["numberedBookmarks.jumpToBookmark3"]
-    },
-    {
       "before": ["m", "4"],
       "commands": ["numberedBookmarks.toggleBookmark4"]
-    },
-    {
-      "before": ["'", "4"],
-      "commands": ["numberedBookmarks.jumpToBookmark4"]
     },
     {
       "before": ["m", "5"],
       "commands": ["numberedBookmarks.toggleBookmark5"]
     },
     {
-      "before": ["'", "5"],
-      "commands": ["numberedBookmarks.jumpToBookmark5"]
-    },
-    {
       "before": ["m", "6"],
       "commands": ["numberedBookmarks.toggleBookmark6"]
-    },
-    {
-      "before": ["'", "6"],
-      "commands": ["numberedBookmarks.jumpToBookmark6"]
     },
     {
       "before": ["m", "7"],
       "commands": ["numberedBookmarks.toggleBookmark7"]
     },
     {
-      "before": ["'", "7"],
-      "commands": ["numberedBookmarks.jumpToBookmark7"]
-    },
-    {
       "before": ["m", "8"],
       "commands": ["numberedBookmarks.toggleBookmark8"]
-    },
-    {
-      "before": ["'", "8"],
-      "commands": ["numberedBookmarks.jumpToBookmark8"]
     },
     {
       "before": ["m", "9"],
       "commands": ["numberedBookmarks.toggleBookmark9"]
     },
     {
-      "before": ["'", "9"],
-      "commands": ["numberedBookmarks.jumpToBookmark9"]
+      "before": ["n"],
+      "after": ["n", "z", "z", "z", "v"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
