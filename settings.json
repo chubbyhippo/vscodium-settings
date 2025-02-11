@@ -4,6 +4,7 @@
   "editor.fontSize": 13,
   "editor.lineHeight": 1.2,
   "files.autoSave": "afterDelay",
+  "git.openRepositoryInParentFolders": "always",
   "numberedBookmarks.navigateThroughAllFiles": "replace",
   "telemetry.telemetryLevel": "off",
   "vim.hlsearch": true,
@@ -63,6 +64,14 @@
       "commands": ["numberedBookmarks.jumpToBookmark9"]
     },
     {
+      "before": ["("],
+      "commands": ["workbench.action.compareEditor.previousChange"]
+    },
+    {
+      "before": [")"],
+      "commands": ["workbench.action.compareEditor.nextChange"]
+    },
+    {
       "before": ["+"],
       "after": ["<c-w>", ">"]
     },
@@ -97,6 +106,14 @@
     {
       "before": ["<c-u>"],
       "after": ["<c-u>", "z", "z"]
+    },
+    {
+      "before": ["<leader>", ".", "P"],
+      "commands": ["workbench.view.extensions"]
+    },
+    {
+      "before": ["<leader>", ".", "P"],
+      "commands": ["workbench.view.extensions"]
     },
     {
       "before": ["<leader>", ".", "k"],
@@ -238,11 +255,6 @@
       "commands": ["editor.action.formatDocument"]
     },
     {
-      "before": ["<leader>", "f", "o"],
-      "commands": ["calva-fmt.formatCurrentForm"],
-      "when": "editorLangId == clojure"
-    },
-    {
       "before": ["<leader>", "g", "P"],
       "commands": ["git.push"]
     },
@@ -285,8 +297,20 @@
       "commands": ["explorer.newFile"]
     },
     {
+      "before": ["<leader>", "n", "t"],
+      "commands": ["workbench.action.terminal.new"]
+    },
+    {
+      "before": ["<leader>", "o", "f"],
+      "commands": ["workbench.action.files.openFile"]
+    },
+    {
       "before": ["<leader>", "o", "i"],
       "commands": ["editor.action.organizeImports"]
+    },
+    {
+      "before": ["<leader>", "o", "p"],
+      "commands": ["workbench.action.files.openFolder"]
     },
     {
       "before": ["<leader>", "q"],
@@ -303,11 +327,6 @@
     {
       "before": ["<leader>", "r", "n"],
       "commands": ["editor.action.rename"]
-    },
-    {
-      "before": ["<leader>", "r", "r"],
-      "commands": ["java.debug.runJavaFile"],
-      "when": "editorLangId == java"
     },
     {
       "before": ["<leader>", "r", "t"],
@@ -406,16 +425,6 @@
       "commands": ["editor.action.goToImplementation"]
     },
     {
-      "before": ["g", "t"],
-      "commands": ["java.test.goToTest"],
-      "when": "resourceExtname == '.java'"
-    },
-    {
-      "before": ["g", "t"],
-      "commands": ["java.test.goToTestSubject"],
-      "when": "resourceExtname == '.java' && resourceFilename.toLowerCase() =~ /test/"
-    },
-    {
       "before": ["m", "0"],
       "commands": ["numberedBookmarks.toggleBookmark0"]
     },
@@ -458,6 +467,14 @@
     {
       "before": ["n"],
       "after": ["n", "z", "z", "z", "v"]
+    },
+    {
+      "before": ["{"],
+      "command": ["workbench.action.editor.previousChange"]
+    },
+    {
+      "before": ["}"],
+      "commands": ["workbench.action.editor.nextChange"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -604,9 +621,6 @@
   },
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
-  },
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
