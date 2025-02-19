@@ -1,8 +1,11 @@
 {
+  "chat.commandCenter.enabled": false,
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
   "editor.lineHeight": 1.2,
+  "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": true,
   "files.autoSave": "afterDelay",
   "git.openRepositoryInParentFolders": "always",
   "numberedBookmarks.navigateThroughAllFiles": "replace",
@@ -15,7 +18,14 @@
   "vim.surround": true,
   "vim.useCtrlKeys": true,
   "vim.useSystemClipboard": true,
-  "workbench.colorTheme": "Kimbie Dark",
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "toggle",
+  "workbench.activityBar.iconClickBehavior": "toggle",
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.editor.showTabs": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.renderIndentGuides": "onHover",
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
@@ -64,14 +74,6 @@
       "commands": ["numberedBookmarks.jumpToBookmark9"]
     },
     {
-      "before": ["("],
-      "commands": ["workbench.action.compareEditor.previousChange"]
-    },
-    {
-      "before": [")"],
-      "commands": ["workbench.action.compareEditor.nextChange"]
-    },
-    {
       "before": ["+"],
       "after": ["<c-w>", ">"]
     },
@@ -88,22 +90,6 @@
       "after": ["<c-d>", "z", "z"]
     },
     {
-      "before": ["<c-h>"],
-      "after": ["<c-w>", "h"]
-    },
-    {
-      "before": ["<c-j>"],
-      "after": ["<c-w>", "j"]
-    },
-    {
-      "before": ["<c-k>"],
-      "after": ["<c-w>", "k"]
-    },
-    {
-      "before": ["<c-l>"],
-      "after": ["<c-w>", "l"]
-    },
-    {
       "before": ["<c-u>"],
       "after": ["<c-u>", "z", "z"]
     },
@@ -112,12 +98,12 @@
       "commands": ["workbench.view.extensions"]
     },
     {
-      "before": ["<leader>", ".", "P"],
-      "commands": ["workbench.view.extensions"]
-    },
-    {
       "before": ["<leader>", ".", "k"],
       "commands": ["workbench.action.openGlobalKeybindings"]
+    },
+    {
+      "before": ["<leader>", ".", "P"],
+      "commands": ["workbench.view.extensions"]
     },
     {
       "before": ["<leader>", ".", "s"],
@@ -140,8 +126,8 @@
       "commands": ["testing.showMostRecentOutput"]
     },
     {
-      "before": ["<leader>", "a", "c"],
-      "commands": ["workbench.view.scm"]
+      "before": ["<leader>", "a", "b"],
+      "commands": ["spring.beans.focus"]
     },
     {
       "before": ["<leader>", "a", "c"],
@@ -154,6 +140,10 @@
     {
       "before": ["<leader>", "a", "d"],
       "commands": ["workbench.view.debug"]
+    },
+    {
+      "before": ["<leader>", "a", "e"],
+      "commands": ["spring.mappings.focus"]
     },
     {
       "before": ["<leader>", "a", "g"],
@@ -252,7 +242,10 @@
     },
     {
       "before": ["<leader>", "f", "o"],
-      "commands": ["editor.action.formatDocument"]
+      "commands": [
+        "editor.action.formatDocument",
+        "calva-fmt.formatCurrentForm"
+      ]
     },
     {
       "before": ["<leader>", "g", "P"],
@@ -266,6 +259,7 @@
       "before": ["<leader>", "g", "p"],
       "commands": ["git.pull"]
     },
+
     {
       "before": ["<leader>", "h"],
       "commands": [
@@ -329,6 +323,10 @@
       "commands": ["editor.action.rename"]
     },
     {
+      "before": ["<leader>", "r", "r"],
+      "commands": ["testing.runAtCursor", "java.debug.runJavaFile"]
+    },
+    {
       "before": ["<leader>", "r", "t"],
       "commands": ["testing.runAtCursor"]
     },
@@ -351,6 +349,10 @@
     {
       "before": ["<leader>", "s", "f"],
       "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "s", "h"],
+      "commands": ["editor.action.showHover"]
     },
     {
       "before": ["<leader>", "s", "i"],
@@ -379,6 +381,10 @@
     {
       "before": ["<leader>", "t", "k"],
       "commands": ["workbench.action.toggleScreencastMode"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": [":w"]
     },
     {
       "before": ["<s-Tab>"],
@@ -415,6 +421,22 @@
     {
       "before": ["]"],
       "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["{"],
+      "command": ["workbench.action.editor.previousChange"]
+    },
+    {
+      "before": ["}"],
+      "commands": ["workbench.action.editor.nextChange"]
+    },
+    {
+      "before": ["("],
+      "commands": ["workbench.action.compareEditor.previousChange"]
+    },
+    {
+      "before": [")"],
+      "commands": ["workbench.action.compareEditor.nextChange"]
     },
     {
       "before": ["_"],
@@ -467,14 +489,6 @@
     {
       "before": ["n"],
       "after": ["n", "z", "z", "z", "v"]
-    },
-    {
-      "before": ["{"],
-      "command": ["workbench.action.editor.previousChange"]
-    },
-    {
-      "before": ["}"],
-      "commands": ["workbench.action.editor.nextChange"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -584,6 +598,10 @@
           }
         }
       ]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.findInFiles"]
     },
     {
       "before": ["<leader>", "i", "n"],
