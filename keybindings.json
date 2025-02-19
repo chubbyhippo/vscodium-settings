@@ -45,6 +45,11 @@
     "when": "calva:keybindingsEnabled && editorTextFocus && !editorReadOnly && !hasOtherSuggestions && !suggestWidgetVisible && editorLangId == 'clojure'"
   },
   {
+    "key": "escape",
+    "command": "-closeParameterHints",
+    "when": "editorFocus && parameterHintsVisible"
+  },
+  {
     "command": "-copyFilePath",
     "key": "ctrl+alt+c"
   },
@@ -761,6 +766,10 @@
     "key": "f10"
   },
   {
+    "key": "ctrl+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
     "command": "-workbench.action.files.saveAll",
     "key": ""
   },
@@ -791,6 +800,10 @@
   {
     "key": "cmd+7",
     "command": "-workbench.action.focusSeventhEditorGroup"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "-workbench.action.focusSideBar"
   },
   {
     "key": "cmd+6",
@@ -929,6 +942,16 @@
     "when": "terminalChatFocus"
   },
   {
+    "key": "shift+cmd+]",
+    "command": "-workbench.action.terminal.focusNext",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "-workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
     "key": "down",
     "command": "-workbench.action.terminal.selectNextSuggestion",
     "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
@@ -937,6 +960,14 @@
     "key": "up",
     "command": "-workbench.action.terminal.selectPrevSuggestion",
     "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
+  },
+  {
+    "key": "shift+cmd+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "shift+cmd+-",
+    "command": "-workbench.action.zoomOut"
   },
   {
     "key": "down",
@@ -957,6 +988,11 @@
     "key": "up",
     "command": "-workbench.banner.focusPreviousAction",
     "when": "bannerFocused"
+  },
+  {
+    "key": "cmd+k e",
+    "command": "-workbench.files.action.focusOpenEditorsView",
+    "when": "workbench.explorer.openEditorsView.active"
   },
   {
     "key": "down",
@@ -981,6 +1017,11 @@
   {
     "command": "-workbench.view.debug",
     "key": "ctrl+shift+d"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
   },
   {
     "command": "acceptAlternativeSelectedSuggestion",
@@ -1026,6 +1067,11 @@
     "key": "ctrl+j",
     "command": "breadcrumbs.selectFocused",
     "when": "breadcrumbsActive && breadcrumbsVisible"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "closeParameterHints",
+    "when": "editorFocus && parameterHintsVisible"
   },
   {
     "command": "copyFilePath",
@@ -1588,12 +1634,22 @@
   {
     "command": "java.test.goToTest",
     "key": "ctrl+shift+t",
-    "when": "resourceExtname == .java"
+    "when": "resourceExtname == '.java'"
+  },
+  {
+    "key": "g t",
+    "command": "java.test.goToTest",
+    "when": "editorFocus && resourceExtname == '.java' && vim.mode == 'Normal'"
   },
   {
     "command": "java.test.goToTestSubject",
     "key": "ctrl+shift+t",
     "when": "resourceExtname == .java && resourceFilename =~ /Test/"
+  },
+  {
+    "key": "g t",
+    "command": "java.test.goToTestSubject",
+    "when": "editorFocus && resourceExtname == '.java' && vim.mode == 'Normal' && resourceFilename =~ /Test/"
   },
   {
     "key": "ctrl+h",
@@ -1818,7 +1874,8 @@
   },
   {
     "command": "workbench.action.closeActiveEditor",
-    "key": "ctrl+f4"
+    "key": "ctrl+w",
+    "when": "!editorTextFocus"
   },
   {
     "command": "workbench.action.compareEditor.nextChange",
@@ -1983,7 +2040,8 @@
   },
   {
     "command": "workbench.action.openPreviousEditorFromHistory",
-    "key": "ctrl+e"
+    "key": "ctrl+e",
+    "when": "inQuickOpen"
   },
   {
     "command": "workbench.action.previousEditor",
@@ -2046,6 +2104,16 @@
     "when": "terminalChatFocus"
   },
   {
+    "key": "ctrl+]",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
     "key": "ctrl+j",
     "command": "workbench.action.terminal.selectNextSuggestion",
     "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
@@ -2060,6 +2128,14 @@
     "key": "shift+[Escape]"
   },
   {
+    "key": "shift+alt+=",
+    "command": "workbench.action.zoomIn"
+  },
+  {
+    "key": "shift+alt+-",
+    "command": "workbench.action.zoomOut"
+  },
+  {
     "key": "ctrl+l",
     "command": "workbench.banner.focusNextAction",
     "when": "bannerFocused"
@@ -2068,6 +2144,11 @@
     "key": "ctrl+h",
     "command": "workbench.banner.focusPreviousAction",
     "when": "bannerFocused"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "workbench.files.action.focusOpenEditorsView",
+    "when": "workbench.explorer.openEditorsView.active"
   },
   {
     "key": "ctrl+l",
@@ -2089,76 +2170,41 @@
   },
   {
     "key": "ctrl+shift+e",
-    "command": "workbench.files.action.focusOpenEditorsView",
-    "when": "workbench.explorer.openEditorsView.active"
-  },
-  {
-    "key": "cmd+k e",
-    "command": "-workbench.files.action.focusOpenEditorsView",
-    "when": "workbench.explorer.openEditorsView.active"
-  },
-  {
-    "key": "ctrl+shift+e",
     "command": "workbench.view.explorer",
     "when": "viewContainer.workbench.view.explorer.enabled"
   },
-  {
-    "key": "shift+cmd+e",
-    "command": "-workbench.view.explorer",
-    "when": "viewContainer.workbench.view.explorer.enabled"
+    {
+    "key": "ctrl+j",
+    "command": "workbench.action.focusBelowGroup",
+    "when": "vim.mode == 'Normal'"
   },
   {
-    "key": "shift+alt+=",
-    "command": "workbench.action.zoomIn"
+    "key": "ctrl+k",
+    "command": "workbench.action.focusAboveGroup",
+    "when": "vim.mode == 'Normal'"
   },
   {
-    "key": "shift+cmd+=",
-    "command": "-workbench.action.zoomIn"
+    "key": "ctrl+h",
+    "command": "workbench.action.focusLeftGroup",
+    "when": "vim.mode == 'Normal'"
   },
   {
-    "key": "shift+alt+-",
-    "command": "workbench.action.zoomOut"
+    "key": "ctrl+l",
+    "command": "workbench.action.focusRightGroup",
+    "when": "vim.mode == 'Normal'"
   },
   {
-    "key": "shift+cmd+-",
-    "command": "-workbench.action.zoomOut"
+    "key": "cmd+w",
+    "command": "-workbench.action.closeActiveEditor"
   },
   {
-    "key": "ctrl+n",
-    "command": "-workbench.action.files.newUntitledFile"
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
   },
   {
-    "key": "ctrl+p",
-    "command": "closeParameterHints",
-    "when": "editorFocus && parameterHintsVisible"
-  },
-  {
-    "key": "escape",
-    "command": "-closeParameterHints",
-    "when": "editorFocus && parameterHintsVisible"
-  },
-  {
-    "key": "ctrl+]",
-    "command": "workbench.action.terminal.focusNext",
-    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
-  },
-  {
-    "key": "shift+cmd+]",
-    "command": "-workbench.action.terminal.focusNext",
-    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
-  },
-  {
-    "key": "ctrl+[",
-    "command": "workbench.action.terminal.focusPrevious",
-    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
-  },
-  {
-    "key": "shift+cmd+[",
-    "command": "-workbench.action.terminal.focusPrevious",
-    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
-  },
-  {
-    "key": "ctrl+0",
-    "command": "-workbench.action.focusSideBar"
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
   }
 ]
