@@ -1637,19 +1637,9 @@
     "when": "resourceExtname == '.java'"
   },
   {
-    "key": "g t",
-    "command": "java.test.goToTest",
-    "when": "editorFocus && resourceExtname == '.java' && vim.mode == 'Normal'"
-  },
-  {
     "command": "java.test.goToTestSubject",
     "key": "ctrl+shift+t",
     "when": "resourceExtname == .java && resourceFilename =~ /Test/"
-  },
-  {
-    "key": "g t",
-    "command": "java.test.goToTestSubject",
-    "when": "editorFocus && resourceExtname == '.java' && vim.mode == 'Normal' && resourceFilename =~ /Test/"
   },
   {
     "key": "ctrl+h",
@@ -1996,7 +1986,7 @@
   },
   {
     "command": "workbench.action.nextEditor",
-    "key": "ctrl+tab"
+    "key": "ctrl+shift+."
   },
   {
     "key": "cmd+1",
@@ -2045,7 +2035,7 @@
   },
   {
     "command": "workbench.action.previousEditor",
-    "key": "ctrl+shift+tab"
+    "key": "ctrl+shift+,"
   },
   {
     "command": "workbench.action.quickOpen",
@@ -2206,5 +2196,49 @@
     "key": "ctrl+k",
     "command": "workbench.action.quickOpenSelectPrevious",
     "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "vim.active && editorFocus && vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualBlock' && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+x",
+    "command": "editor.action.moveSelectionToNextFindMatch",
+    "when": "vim.active && editorFocus && vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualBlock' && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "editor.action.moveSelectionToPreviousFindMatch",
+    "when": "vim.active && editorFocus && vim.mode == 'Visual' || vim.mode == 'VisualBlock' && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "editor.action.selectHighlights",
+    "when": "vim.active && editorFocus && vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualBlock' && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.switchWindow"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+up",
+    "command": "-editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+j",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+down",
+    "command": "-editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
   }
 ]
