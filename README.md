@@ -6,7 +6,7 @@ curl https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/
 # Install extensions
 ## basic
 ```curl
-curl https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/main/install-extensions.sh | /usr/bin/env sh
+curl https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/main/install-default-extensions.sh | /usr/bin/env sh
 ```
 # Uninstall extensions
 ## sh
