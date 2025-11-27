@@ -23,7 +23,6 @@
   "workbench.activityBar.iconClickBehavior": "toggle",
   "workbench.activityBar.location": "top",
   "workbench.colorTheme": "GitHub Dark Default",
-  "workbench.editor.showTabs": "none",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.renderIndentGuides": "onHover",
   "vim.insertModeKeyBindings": [
@@ -33,6 +32,38 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["]", "m"],
+      "commands": ["gotoNextPreviousMember.nextMember"]
+    },
+    {
+      "before": ["[", "m"],
+      "commands": ["gotoNextPreviousMember.previousMember"]
+    },
+    {
+      "before": ["]", "e"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["[", "e"],
+      "commands": ["editor.action.marker.prev"]
+    }, 
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.accessibleDiffViewer.next"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.accessibleDiffViewer.prev"]
+    },
+    {
+      "before": ["]", "c"],
+      "commands": ["workbench.action.editor.nextChange"]
+    },
+    {
+      "before": ["[", "c"],
+      "commands": ["workbench.action.editor.previousChange"]
+    },
     {
       "before": ["'", "0"],
       "commands": ["numberedBookmarks.jumpToBookmark0"]
@@ -94,16 +125,32 @@
       "after": ["<c-u>", "z", "z"]
     },
     {
-      "before": ["<leader>", ".", "P"],
-      "commands": ["workbench.view.extensions"]
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "s"],
+      "commands": ["java.action.navigateToSuperImplementation"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["java.test.goToTest"]
+    },
+    {
+      "before": ["g", "T"],
+      "commands": ["java.test.goToTestSubject"]
     },
     {
       "before": ["<leader>", ".", "k"],
       "commands": ["workbench.action.openGlobalKeybindings"]
     },
     {
-      "before": ["<leader>", ".", "P"],
+      "before": ["<leader>", ".", "p"],
       "commands": ["workbench.view.extensions"]
+    },
+    {
+      "before": ["<leader>", ".", "r"],
+      "commands": ["update.restartToUpdate"]
     },
     {
       "before": ["<leader>", ".", "s"],
@@ -174,6 +221,26 @@
       "commands": ["workbench.action.quickOpen"]
     },
     {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["openEditors.closeAll"]
+    },
+    {
+      "before": ["<leader>", "c", "h"],
+      "commands": ["references-view.showCallHierarchy"]
+    },
+    {
+      "before": ["<leader>", "c", "k"],
+      "commands": ["workbench.action.openGlobalKeybindings"]
+    },
+    {
+      "before": ["<leader>", "c", "s"],
+      "commands": ["workbench.action.openSettingsJson"]
+    },
+    {
+      "before": ["<leader>", "c", "v"],
+      "commands": ["workbench.action.openSettings", "settings.switchToJSON"]
+    },
+    {
       "before": ["<leader>", "d", "h"],
       "commands": [":noh"]
     },
@@ -241,11 +308,27 @@
       ]
     },
     {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
       "before": ["<leader>", "f", "o"],
       "commands": [
         "editor.action.formatDocument",
         "calva-fmt.formatCurrentForm"
       ]
+    },
+    {
+      "before": ["<leader>", "f", "s"],
+      "commands": ["workbench.action.toggleFullScreen"]
+    },
+    {
+      "before": ["<leader>", "f", "u"],
+      "commands": ["references-view.findReferences"]
+    },
+    {
+      "before": ["<leader>", "g", "i"],
+      "commands": ["editor.action.goToImplementation"]
     },
     {
       "before": ["<leader>", "g", "P"],
@@ -256,10 +339,17 @@
       "commands": ["git.pull"]
     },
     {
-      "before": ["<leader>", "g", "p"],
-      "commands": ["git.pull"]
+      "before": ["<leader>", "g", "s"],
+      "commands": ["java.action.navigateToSuperImplementation"]
     },
-
+    {
+      "before": ["<leader>", "g", "t"],
+      "commands": ["java.test.goToTest"]
+    },
+    {
+      "before": ["<leader>", "g", "T"],
+      "commands": ["java.test.goToTestSubject"]
+    },
     {
       "before": ["<leader>", "h"],
       "commands": [
@@ -295,6 +385,10 @@
       "commands": ["workbench.action.terminal.new"]
     },
     {
+      "before": ["<leader>", "o", "e"],
+      "commands": ["revealFileInOS"]
+    },
+    {
       "before": ["<leader>", "o", "f"],
       "commands": ["workbench.action.files.openFile"]
     },
@@ -305,6 +399,27 @@
     {
       "before": ["<leader>", "o", "p"],
       "commands": ["workbench.action.files.openFolder"]
+    },
+    {
+      "before": ["<leader>", "o", "t"],
+      "commands": ["openInIntegratedTerminal"]
+    },
+    {
+      "before": ["<leader>", "p", "p"],
+      "commands": ["editor.action.triggerParameterHints"]
+    },
+    {
+      "before": ["<leader>", "p", "i"],
+      "commands": ["editor.action.previewDeclaration"]
+    },
+    {
+      "before": ["<leader>", "p", "t"],
+      "commands": ["workbench.action.pinEditor"],
+      "when": ["!activeEditorIsPinned"]
+    },
+    {
+      "before": ["<leader>", "p", "h"],
+      "commands": ["editor.action.showHover"]
     },
     {
       "before": ["<leader>", "q"],
@@ -356,11 +471,19 @@
     },
     {
       "before": ["<leader>", "s", "i"],
-      "commands": ["editor.action.previewDeclaration"]
+      "commands": ["workbench.action.debug.stepInto"]
     },
     {
       "before": ["<leader>", "s", "k"],
       "commands": ["workbench.action.toggleScreencastMode"]
+    },
+    {
+      "before": ["<leader>", "s", "o"],
+      "commands": ["workbench.action.debug.stepOver"]
+    },
+    {
+      "before": ["<leader>", "s", "O"],
+      "commands": ["workbench.action.debug.stepOut"]
     },
     {
       "before": ["<leader>", "s", "p"],
@@ -379,8 +502,17 @@
       "commands": ["editor.debug.action.toggleBreakpoint"]
     },
     {
+      "before": ["<leader>", "t", "f"],
+      "commands": ["workbench.action.toggleFullScreen"]
+    },
+    {
       "before": ["<leader>", "t", "k"],
       "commands": ["workbench.action.toggleScreencastMode"]
+    },
+    {
+      "before": ["<leader>", "u", "p"],
+      "commands": ["workbench.action.unpinEditor"],
+      "when": ["activeEditorIsPinned"]
     },
     {
       "before": ["<leader>", "w"],
@@ -635,6 +767,7 @@
     "<C-e>": false,
     "<C-r>": true,
     "<C-v>": true,
+    "<C-w>": false,
     "<C-x>": false
   },
   "extensions.experimental.affinity": {
