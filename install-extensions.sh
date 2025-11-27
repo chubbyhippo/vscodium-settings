@@ -1,14 +1,26 @@
 #!/usr/bin/env sh
 
 # keybindings
-codium --force --install-extension vscodevim.vim
+code --force --install-extension vscodevim.vim
+# github theme
+code --force --install-extension GitHub.github-vscode-theme
+# material icon theme
+code --force --install-extension PKief.material-icon-theme
 # sonarqube
-codium --force --install-extension SonarSource.sonarlint-vscode
+code --force --install-extension SonarSource.sonarlint-vscode
 # git
-codium --force --install-extension eamodio.gitlens
+code --force --install-extension eamodio.gitlens
 # numbered bookmark
-codium --force --install-extension alefragnani.numbered-bookmarks
+code --force --install-extension alefragnani.numbered-bookmarks
 # docker
-codium --force --install-extension ms-azuretools.vscode-docker
+code --force --install-extension ms-azuretools.vscode-docker
+# wsl
+code --force --install-extension ms-vscode-remote.remote-wsl
+# prettier
+code --force --install-extension esbenp.prettier-vscode
 # yaml
-codium --force --install-extension redhat.vscode-yaml
+code --force --install-extension redhat.vscode-yaml
+# xml
+code --force --install-extension redhat.vscode-xml
+# ]m [m
+code --force --install-extension mishkinf.goto-next-previous-member
