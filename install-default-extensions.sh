@@ -24,3 +24,5 @@ code --force --install-extension redhat.vscode-yaml
 code --force --install-extension redhat.vscode-xml
 # ]m [m
 code --force --install-extension mishkinf.goto-next-previous-member
+# rest client
+code --force --install-extension humao.rest-client
