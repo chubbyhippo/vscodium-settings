@@ -2296,4 +2296,9 @@
     "key": "space a c",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "workbench.view.debug",
+    "key": "space a d",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
 ]
