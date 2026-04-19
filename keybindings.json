@@ -2476,4 +2476,48 @@
     "key": "space f u",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "workbench.view.scm",
+    "key": "space g g",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "editor.action.goToImplementation",
+    "key": "space g i",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "git.pull",
+    "key": "space g p",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "git.push",
+    "key": "space g P",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "java.action.navigateToSuperImplementation",
+    "key": "space g s",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "java.test.goToTest",
+    "key": "space g t",
+    "when": "inputFocus && vim.mode == 'Normal' && resourceExtname == '.java'"
+  },
+  {
+    "command": "java.test.goToTestSubject",
+    "key": "space g t",
+    "when": "inputFocus && vim.mode == 'Normal' && resourceExtname == '.java' && resourceFilename =~ /Test/"
+  },
+  {
+    "commands": [
+      "workbench.action.closeAuxiliaryBar",
+      "workbench.action.closePanel",
+      "workbench.action.closeSidebar"
+    ],
+    "key": "space h",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  }
 ]
