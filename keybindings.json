@@ -2396,4 +2396,16 @@
     "key": "space e V",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
+  {
+    "commands": [
+      {
+        "command": "editor.action.codeAction",
+        "args": {
+          "kind": "refactor.extract.constant"
+        }
+      }
+    ],
+    "key": "space e c",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  }
 ]
