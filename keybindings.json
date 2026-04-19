@@ -2366,4 +2366,9 @@
     "key": "space c A",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "editor.action.formatDocument",
+    "key": "space c f",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
 ]
