@@ -2285,5 +2285,10 @@
     "command": "workbench.action.openEditorAtIndex9",
     "key": "space 9",
     "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "extension.vim_ctrl+6",
+    "key": "space space",
+    "when": "inputFocus && vim.mode == 'Normal'"
   }
 ]
