@@ -2382,6 +2382,11 @@
     "when": "inputFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "workbench.action.openSettingsJson",
+    "key": "space c s",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
     "command": "numberedBookmarks.clearFromAllFiles",
     "key": "space d m",
     "when": "inputFocus && vim.mode == 'Normal'"
