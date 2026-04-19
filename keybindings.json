@@ -2519,5 +2519,17 @@
     ],
     "key": "space h",
     "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "commands": [
+      {
+        "command": "editor.action.codeAction",
+        "args": {
+          "kind": "refactor.inline"
+        }
+      }
+    ],
+    "key": "space i n",
+    "when": "inputFocus && vim.mode == 'Normal'"
   }
 ]
