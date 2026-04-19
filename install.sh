@@ -18,7 +18,7 @@ case $(uname) in
         ;;
     "MINGW"*)
         # For Windows systems using MinGW
-        case $(command -v code 2>/dev/null) in
+        case $(command -v codium 2>/dev/null) in
             *"/scoop/apps/vscodium/"*)
                 # If vscodium was installed via Scoop
                 echo "vscodium was installed via Scoop."
