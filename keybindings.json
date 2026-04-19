@@ -2316,4 +2316,9 @@
     "key": "space a m",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "workbench.view.explorer",
+    "key": "space a p",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
 ]
