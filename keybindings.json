@@ -2406,7 +2406,7 @@
       }
     ],
     "key": "space e c",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
     "commands": [
@@ -2418,7 +2418,7 @@
       }
     ],
     "key": "space e f",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
     "commands": [
@@ -2430,7 +2430,7 @@
       }
     ],
     "key": "space e m",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
     "commands": [
@@ -2442,7 +2442,7 @@
       }
     ],
     "key": "space e p",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
     "commands": [
@@ -2454,12 +2454,12 @@
       }
     ],
     "key": "space e v",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
     "command": "workbench.action.findInFiles",
     "key": "space f f",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
     "command": "editor.action.formatDocument",
@@ -2530,7 +2530,7 @@
       }
     ],
     "key": "space i n",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
     "command": "numberedBookmarks.listFromAllFiles",
@@ -2551,5 +2551,5 @@
     "command": "workbench.action.terminal.new",
     "key": "space n t",
     "when": "inputFocus && vim.mode == 'Normal'"
-  },
+  }
 ]
