@@ -2321,4 +2321,9 @@
     "key": "space a p",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "outline.focus",
+    "key": "space a s",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
 ]
