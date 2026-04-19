@@ -2347,6 +2347,11 @@
     "when": "inputFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "workbench.action.quickOpenLeastRecentlyUsedEditor",
+    "key": "space b i",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
     "command": "workbench.action.closeActiveEditor",
     "key": "space b k",
     "when": "inputFocus && vim.mode == 'Normal'"
