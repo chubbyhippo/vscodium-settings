@@ -2302,6 +2302,11 @@
     "when": "inputFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "workbench.view.scm",
+    "key": "space a g",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
     "command": "workbench.panel.chat",
     "key": "space a i",
     "when": "inputFocus && vim.mode == 'Normal'"
