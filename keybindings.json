@@ -2431,5 +2431,17 @@
     ],
     "key": "space e m",
     "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "commands": [
+      {
+        "command": "editor.action.codeAction",
+        "args": {
+          "kind": "refactor.introduce"
+        }
+      }
+    ],
+    "key": "space e p",
+    "when": "inputFocus && vim.mode == 'Normal'"
   }
 ]
