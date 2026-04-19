@@ -2356,4 +2356,9 @@
     "key": "space b k",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "editor.action.quickFix",
+    "key": "space c a",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
 ]
