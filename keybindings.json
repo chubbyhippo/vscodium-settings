@@ -2461,4 +2461,19 @@
     "key": "space f f",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "editor.action.formatDocument",
+    "key": "space f o",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "workbench.action.toggleFullScreen",
+    "key": "space f s",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "references-view.findReferences",
+    "key": "space f u",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
 ]
