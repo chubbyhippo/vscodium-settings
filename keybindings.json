@@ -2531,5 +2531,25 @@
     ],
     "key": "space i n",
     "when": "inputFocus && vim.mode == 'Normal'"
-  }
+  },
+  {
+    "command": "numberedBookmarks.listFromAllFiles",
+    "key": "space m i",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "explorer.newFolder",
+    "key": "space n d",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "explorer.newFile",
+    "key": "space n f",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "workbench.action.terminal.new",
+    "key": "space n t",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
 ]
