@@ -2346,4 +2346,9 @@
     "key": "space b d",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "workbench.action.closeActiveEditor",
+    "key": "space b k",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
 ]
