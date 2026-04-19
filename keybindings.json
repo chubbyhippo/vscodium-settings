@@ -2391,4 +2391,9 @@
     "key": "space d m",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
+  {
+    "commands": ["workbench.action.openSettings", "settings.switchToJSON"],
+    "key": "space e V",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
 ]
