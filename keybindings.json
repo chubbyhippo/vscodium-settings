@@ -2326,4 +2326,9 @@
     "key": "space a s",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "workbench.action.terminal.toggleTerminal",
+    "key": "space a t",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
 ]
