@@ -2455,5 +2455,10 @@
     ],
     "key": "space e v",
     "when": "inputFocus && vim.mode == 'Normal'"
-  }
+  },
+  {
+    "command": "workbench.action.findInFiles",
+    "key": "space f f",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
 ]
