@@ -2240,5 +2240,50 @@
     "command": "-workbench.statusBar.focusPrevious",
     "key": "up",
     "when": "statusBarFocused"
+  },
+  {
+    "command": "workbench.action.openEditorAtIndex1",
+    "key": "space 1",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "workbench.action.openEditorAtIndex2",
+    "key": "space 2",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "workbench.action.openEditorAtIndex3",
+    "key": "space 3",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "workbench.action.openEditorAtIndex4",
+    "key": "space 4",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "workbench.action.openEditorAtIndex5",
+    "key": "space 5",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "workbench.action.openEditorAtIndex6",
+    "key": "space 6",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "workbench.action.openEditorAtIndex7",
+    "key": "space 7",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "workbench.action.openEditorAtIndex8",
+    "key": "space 8",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "workbench.action.openEditorAtIndex9",
+    "key": "space 9",
+    "when": "inputFocus && vim.mode == 'Normal'"
   }
 ]
