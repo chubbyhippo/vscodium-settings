@@ -2290,5 +2290,10 @@
     "command": "extension.vim_ctrl+6",
     "key": "space space",
     "when": "inputFocus && vim.mode == 'Normal'"
-  }
+  },
+  {
+    "command": "workbench.view.scm",
+    "key": "space a c",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
 ]
