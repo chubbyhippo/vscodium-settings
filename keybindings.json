@@ -2376,4 +2376,9 @@
     "key": "space c h",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "workbench.action.closeOtherEditors",
+    "key": "space c o",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
 ]
