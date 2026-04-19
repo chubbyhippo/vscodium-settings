@@ -2307,6 +2307,11 @@
     "when": "inputFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "gradleDefaultProjectsView.focus",
+    "key": "space a G",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
     "command": "workbench.panel.chat",
     "key": "space a i",
     "when": "inputFocus && vim.mode == 'Normal'"
