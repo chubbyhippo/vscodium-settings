@@ -2331,4 +2331,9 @@
     "key": "space a t",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "workbench.view.testing.focus",
+    "key": "space a T",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
 ]
