@@ -2371,4 +2371,9 @@
     "key": "space c f",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "references-view.showCallHierarchy",
+    "key": "space c h",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
 ]
