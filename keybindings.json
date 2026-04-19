@@ -2407,5 +2407,17 @@
     ],
     "key": "space e c",
     "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "commands": [
+      {
+        "command": "editor.action.codeAction",
+        "args": {
+          "kind": "refactor.extract.field"
+        }
+      }
+    ],
+    "key": "space e f",
+    "when": "inputFocus && vim.mode == 'Normal'"
   }
 ]
