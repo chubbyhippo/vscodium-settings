@@ -2361,4 +2361,9 @@
     "key": "space c a",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "openEditors.closeAll",
+    "key": "space c A",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
 ]
