@@ -19,14 +19,14 @@ case $(uname) in
     "MINGW"*)
         # For Windows systems using MinGW
         case $(command -v code 2>/dev/null) in
-            *"/scoop/apps/vscode/"*)
-                # If VSCode was installed via Scoop
-                echo "vscode was installed via Scoop."
+            *"/scoop/apps/vscodium/"*)
+                # If vscodium was installed via Scoop
+                echo "vscodium was installed via Scoop."
                 settings_json_destination="$HOME/scoop/apps/vscodium/current/data/user-data/User/settings.json"
                 keybindings_json_destination="$HOME/scoop/apps/vscodium/current/data/user-data/User/keybindings.json"
                 ;;
             *)
-                # Default VSCode installation path in Windows
+                # Default vscodium installation path in Windows
                 settings_json_destination="$HOME/AppData/Roaming/VSCodium/User/settings.json"
                 keybindings_json_destination="$HOME/AppData/Roaming/VSCodium/User/keybindings.json"
                 ;;
@@ -53,5 +53,5 @@ elif [ "$(command -v wget)" ]; then
     wget https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/main/keybindings.json -P "$keybindings_json_destination"
 fi
 
-# Install basic VSCode extensions by executing a remote script
+# Install basic vscodium extensions by executing a remote script
 curl -k https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/main/install-default-extensions.sh | /usr/bin/env sh
