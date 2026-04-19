@@ -2301,4 +2301,9 @@
     "key": "space a d",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "workbench.panel.chat",
+    "key": "space a i",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
 ]
