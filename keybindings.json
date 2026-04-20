@@ -2557,5 +2557,50 @@
     "command": "workbench.action.terminal.new",
     "key": "space n t",
     "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "revealFileInOS",
+    "key": "space o e",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "workbench.action.files.openFile",
+    "key": "space o f",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "workbench.action.files.openFolder",
+    "key": "space o shift+f",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "editor.action.organizeImports",
+    "key": "space o i",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "outline.focus",
+    "key": "space o l",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "workbench.action.files.openFileFolder",
+    "key": "space o p",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "markdown.showPreviewToSide",
+    "key": "space o shift+p",
+    "when": "inputFocus && vim.mode == 'Normal' && !notebookEditorFocused && editorLangId =~ /^(markdown|prompt|instructions|chatagent)$/"
+  },
+  {
+    "command": "asciidoc.showPreviewToSide",
+    "key": "space o shift+p",
+    "when": "inputFocus && vim.mode == 'Normal' && editorLangId == 'asciidoc'"
+  },
+  {
+    "command": "openInIntegratedTerminal",
+    "key": "space o t",
+    "when": "inputFocus && vim.mode == 'Normal'"
   }
 ]
