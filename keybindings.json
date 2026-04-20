@@ -2515,11 +2515,14 @@
     "when": "inputFocus && vim.mode == 'Normal' && resourceExtname == '.java' && resourceFilename =~ /Test/"
   },
   {
-    "commands": [
-      "workbench.action.closeAuxiliaryBar",
-      "workbench.action.closePanel",
-      "workbench.action.closeSidebar"
-    ],
+    "args": {
+      "commands": [
+        "workbench.action.closeAuxiliaryBar",
+        "workbench.action.closePanel",
+        "workbench.action.closeSidebar"
+      ]
+    },
+    "command": "runCommands",
     "key": "space h",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
