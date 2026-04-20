@@ -2308,7 +2308,7 @@
   },
   {
     "command": "gradleDefaultProjectsView.focus",
-    "key": "space a G",
+    "key": "space a shift+g",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
   {
