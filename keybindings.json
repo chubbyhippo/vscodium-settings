@@ -2244,152 +2244,152 @@
   {
     "command": "workbench.action.openEditorAtIndex1",
     "key": "space 1",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.openEditorAtIndex2",
     "key": "space 2",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.openEditorAtIndex3",
     "key": "space 3",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.openEditorAtIndex4",
     "key": "space 4",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.openEditorAtIndex5",
     "key": "space 5",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.openEditorAtIndex6",
     "key": "space 6",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.openEditorAtIndex7",
     "key": "space 7",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.openEditorAtIndex8",
     "key": "space 8",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.openEditorAtIndex9",
     "key": "space 9",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "extension.vim_ctrl+6",
     "key": "space space",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.view.scm",
     "key": "space a c",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.view.debug",
     "key": "space a d",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.view.scm",
     "key": "space a g",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "gradleDefaultProjectsView.focus",
     "key": "space a shift+g",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.panel.chat",
     "key": "space a i",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "mavenProjects.focus",
     "key": "space a m",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.view.explorer",
     "key": "space a p",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "outline.focus",
     "key": "space a s",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.terminal.toggleTerminal",
     "key": "space a t",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.view.testing.focus",
     "key": "space a shift+t",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.closeActiveEditor",
     "key": "space b d",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.quickOpenLeastRecentlyUsedEditor",
     "key": "space b i",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.closeActiveEditor",
     "key": "space b k",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "editor.action.quickFix",
     "key": "space c a",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "openEditors.closeAll",
     "key": "space c shift+a",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "editor.action.formatDocument",
     "key": "space c f",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "references-view.showCallHierarchy",
     "key": "space c h",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.closeOtherEditors",
     "key": "space c o",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.openSettingsJson",
     "key": "space c s",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "numberedBookmarks.clearFromAllFiles",
     "key": "space d m",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "commands": [
@@ -2397,7 +2397,7 @@
       "settings.switchToJSON"
     ],
     "key": "space e shift+v",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "commands": [
@@ -2409,7 +2409,7 @@
       }
     ],
     "key": "space e c",
-    "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
     "commands": [
@@ -2421,7 +2421,7 @@
       }
     ],
     "key": "space e f",
-    "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
     "commands": [
@@ -2433,7 +2433,7 @@
       }
     ],
     "key": "space e m",
-    "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
     "commands": [
@@ -2445,7 +2445,7 @@
       }
     ],
     "key": "space e p",
-    "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
     "commands": [
@@ -2457,62 +2457,62 @@
       }
     ],
     "key": "space e v",
-    "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
     "command": "workbench.action.findInFiles",
     "key": "space f f",
-    "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
     "command": "editor.action.formatDocument",
     "key": "space f o",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.toggleFullScreen",
     "key": "space f s",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "references-view.findReferences",
     "key": "space f u",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.view.scm",
     "key": "space g g",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "editor.action.goToImplementation",
     "key": "space g i",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "git.pull",
     "key": "space g p",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "git.push",
     "key": "space g shift+p",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "java.action.navigateToSuperImplementation",
     "key": "space g s",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "java.test.goToTest",
     "key": "space g t",
-    "when": "inputFocus && vim.mode == 'Normal' &&resourceExtname == '.java'"
+    "when": "editorTextFocus && vim.mode == 'Normal' &&resourceExtname == '.java'"
   },
   {
     "command": "java.test.goToTestSubject",
     "key": "space g t",
-    "when": "inputFocus && vim.mode == 'Normal' && resourceExtname == '.java' && resourceFilename =~ /Test/"
+    "when": "editorTextFocus && vim.mode == 'Normal' && resourceExtname == '.java' && resourceFilename =~ /Test/"
   },
   {
     "args": {
@@ -2524,7 +2524,7 @@
     },
     "command": "runCommands",
     "key": "space h",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "commands": [
@@ -2536,131 +2536,141 @@
       }
     ],
     "key": "space i n",
-    "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
     "command": "numberedBookmarks.listFromAllFiles",
     "key": "space m i",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "explorer.newFolder",
     "key": "space n d",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "explorer.newFile",
     "key": "space n f",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.terminal.new",
     "key": "space n t",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "revealFileInOS",
     "key": "space o e",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.files.openFile",
     "key": "space o f",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.files.openFolder",
     "key": "space o shift+f",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "editor.action.organizeImports",
     "key": "space o i",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "outline.focus",
     "key": "space o l",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.files.openFileFolder",
     "key": "space o p",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "markdown.showPreviewToSide",
     "key": "space o shift+p",
-    "when": "inputFocus && vim.mode == 'Normal' && !notebookEditorFocused && editorLangId =~ /^(markdown|prompt|instructions|chatagent)$/"
+    "when": "editorTextFocus && vim.mode == 'Normal' && !notebookEditorFocused && editorLangId =~ /^(markdown|prompt|instructions|chatagent)$/"
   },
   {
     "command": "asciidoc.showPreviewToSide",
     "key": "space o shift+p",
-    "when": "inputFocus && vim.mode == 'Normal' && editorLangId == 'asciidoc'"
+    "when": "editorTextFocus && vim.mode == 'Normal' && editorLangId == 'asciidoc'"
   },
   {
     "command": "openInIntegratedTerminal",
     "key": "space o t",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "editor.action.showHover",
     "key": "space p h",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "editor.action.previewDeclaration",
     "key": "space p i",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "editor.action.triggerParameterHints",
     "key": "space p p",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.pinEditor",
     "key": "space p t",
-    "when": "inputFocus && vim.mode == 'Normal' && !activeEditorIsPinned"
+    "when": "editorTextFocus && vim.mode == 'Normal' && !activeEditorIsPinned"
   },
   {
     "command": "editor.action.showHover",
     "key": "space p h",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "editor.action.previewDeclaration",
     "key": "space p i",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "editor.action.triggerParameterHints",
     "key": "space p p",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.pinEditor",
     "key": "space p t",
-    "when": "inputFocus && vim.mode == 'Normal' && !activeEditorIsPinned"
+    "when": "editorTextFocus && vim.mode == 'Normal' && !activeEditorIsPinned"
   },
   {
     "command": "workbench.action.closeActiveEditor",
     "key": "space q",
-    "when": "inputFocus && vim.mode != 'Insert'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "testing.coverageAtCursor",
     "key": "space r c",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "editor.action.refactor",
     "key": "space r e",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "editor.action.rename",
     "key": "space r n",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "testing.runAtCursor",
+    "key": "space r r",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "java.debug.runJavaFile",
+    "key": "space r r",
+    "when": "editorTextFocus && vim.mode == 'Normal' && resourceExtname == '.java'"
   }
 ]
