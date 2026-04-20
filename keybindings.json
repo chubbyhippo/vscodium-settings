@@ -2392,10 +2392,7 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
-    "commands": [
-      "workbench.action.openSettings",
-      "settings.switchToJSON"
-    ],
+    "commands": ["workbench.action.openSettings", "settings.switchToJSON"],
     "key": "space e shift+v",
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
@@ -2681,6 +2678,11 @@
   {
     "command": "workbench.debug.welcome.focus",
     "key": "space r u",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "workbench.action.replaceInFiles",
+    "key": "space r w",
     "when": "editorTextFocus && vim.mode == 'Normal'"
   }
 ]
