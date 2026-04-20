@@ -27,7 +27,5 @@ codium --force --install-extension mishkinf.goto-next-previous-member
 codium --force --install-extension humao.rest-client
 # asciidoctor
 codium --force --install-extension asciidoctor.asciidoctor-vscode
-# markdown execute
-codium --force --install-extension hanskre.markdown-execute
 # mise
 codium --force --install-extension hverlin.mise-vscode
