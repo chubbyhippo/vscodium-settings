@@ -2642,5 +2642,10 @@
     "command": "workbench.action.pinEditor",
     "key": "space p t",
     "when": "inputFocus && vim.mode == 'Normal' && !activeEditorIsPinned"
+  },
+  {
+    "command": "workbench.action.closeActiveEditor",
+    "key": "space q",
+    "when": "inputFocus && vim.mode != 'Insert'"
   }
 ]
