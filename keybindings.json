@@ -2502,14 +2502,18 @@
     "when": "inputFocus && vim.mode == 'Normal'"
   },
   {
-    "command": "java.test.goToTest",
+    "commands": [
+      {
+        "command": "java.test.goToTestSubject",
+        "when": "resourceExtname == '.java' && resourceFilename =~ /Test/"
+      },
+      {
+        "command": "java.test.goToTest",
+        "when": "resourceExtname == '.java'"
+      }
+    ],
     "key": "space g t",
-    "when": "inputFocus && vim.mode == 'Normal' && resourceExtname == '.java'"
-  },
-  {
-    "command": "java.test.goToTestSubject",
-    "key": "space g t",
-    "when": "inputFocus && vim.mode == 'Normal' && resourceExtname == '.java' && resourceFilename =~ /Test/"
+    "when": "inputFocus && vim.mode == 'Normal'"
   },
   {
     "commands": [
