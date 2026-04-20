@@ -596,6 +596,36 @@
     "key": "ctrl+alt+s"
   },
   {
+    "command": "workbench.action.decreaseViewSize",
+    "key": "ctrl+alt+shift+h",
+    "when": "sideBarFocus"
+  },
+  {
+    "command": "workbench.action.increaseViewSize",
+    "key": "ctrl+alt+shift+h",
+    "when": "auxiliaryBarFocus"
+  },
+  {
+    "command": "workbench.action.decreaseViewSize",
+    "key": "ctrl+alt+shift+j",
+    "when": "panelFocus"
+  },
+  {
+    "command": "workbench.action.increaseViewSize",
+    "key": "ctrl+alt+shift+k",
+    "when": "panelFocus"
+  },
+  {
+    "command": "workbench.action.increaseViewSize",
+    "key": "ctrl+alt+shift+l",
+    "when": "sideBarFocus"
+  },
+  {
+    "command": "workbench.action.decreaseViewSize",
+    "key": "ctrl+alt+shift+l",
+    "when": "auxiliaryBarFocus"
+  },
+  {
     "command": "-editor.action.insertCursorAbove",
     "key": "ctrl+alt+up",
     "when": "editorTextFocus"
