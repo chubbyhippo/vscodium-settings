@@ -2641,6 +2641,11 @@
     "when": "editorTextFocus && vim.mode == 'Normal' && !activeEditorIsPinned"
   },
   {
+    "command": "workbench.action.unpinEditor",
+    "key": "space p shift+t",
+    "when": "editorTextFocus && vim.mode == 'Normal' && activeEditorIsPinned"
+  },
+  {
     "command": "workbench.action.closeActiveEditor",
     "key": "space q",
     "when": "editorTextFocus && vim.mode == 'Normal'"
@@ -2718,21 +2723,26 @@
   {
     "command": "editor.debug.action.toggleBreakpoint",
     "key": "space t b",
-    "when": "editorTextFocus && vim.mode == 'Insert'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "editor.debug.action.toggleBreakpoint",
     "key": "space t b",
-    "when": "editorTextFocus && vim.mode == 'Insert'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.toggleFullScreen",
     "key": "space t f",
-    "when": "editorTextFocus && vim.mode == 'Insert'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "command": "workbench.action.toggleScreencastMode",
     "key": "space t k",
-    "when": "editorTextFocus && vim.mode == 'Insert'"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "workbench.action.unpinEditor",
+    "key": "space u p",
+    "when": "editorTextFocus && vim.mode == 'Normal' && activeEditorIsPinned"
+  }
 ]
