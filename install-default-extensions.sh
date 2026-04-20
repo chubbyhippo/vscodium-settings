@@ -29,3 +29,5 @@ codium --force --install-extension humao.rest-client
 codium --force --install-extension asciidoctor.asciidoctor-vscode
 # mise
 codium --force --install-extension hverlin.mise-vscode
+# markdown runner
+codium --force --install-extension Sycl.markdown-command-runner
