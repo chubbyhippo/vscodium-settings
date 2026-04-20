@@ -15,8 +15,6 @@ codium --force --install-extension eamodio.gitlens
 codium --force --install-extension alefragnani.numbered-bookmarks
 # docker
 codium --force --install-extension ms-azuretools.vscode-docker
-# wsl
-codium --force --install-extension ms-vscode-remote.remote-wsl
 # prettier
 codium --force --install-extension esbenp.prettier-vscode
 # yaml
