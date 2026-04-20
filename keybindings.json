@@ -2363,7 +2363,7 @@
   },
   {
     "command": "openEditors.closeAll",
-    "key": "space c A",
+    "key": "space c shift+a",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
   {
