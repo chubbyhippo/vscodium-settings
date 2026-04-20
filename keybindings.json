@@ -2715,4 +2715,24 @@
     "key": "space s t",
     "when": "editorTextFocus && vim.mode == 'Insert'"
   },
+  {
+    "command": "editor.debug.action.toggleBreakpoint",
+    "key": "space t b",
+    "when": "editorTextFocus && vim.mode == 'Insert'"
+  },
+  {
+    "command": "editor.debug.action.toggleBreakpoint",
+    "key": "space t b",
+    "when": "editorTextFocus && vim.mode == 'Insert'"
+  },
+  {
+    "command": "workbench.action.toggleFullScreen",
+    "key": "space t f",
+    "when": "editorTextFocus && vim.mode == 'Insert'"
+  },
+  {
+    "command": "workbench.action.toggleScreencastMode",
+    "key": "space t k",
+    "when": "editorTextFocus && vim.mode == 'Insert'"
+  },
 ]
