@@ -2684,5 +2684,10 @@
     "command": "workbench.action.replaceInFiles",
     "key": "space r w",
     "when": "editorTextFocus && vim.mode == 'Normal'"
-  }
+  },
+  {
+    "command": "workbench.action.showCommands",
+    "key": "space s a",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
 ]
