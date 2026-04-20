@@ -2287,6 +2287,11 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "workbench.action.openGlobalKeybindings",
+    "key": "space . k",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
     "command": "extension.vim_ctrl+6",
     "key": "space space",
     "when": "editorTextFocus && vim.mode == 'Normal'"
