@@ -2307,6 +2307,11 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "workbench.action.openSettingsJson",
+    "key": "space . s",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
     "command": "extension.vim_ctrl+6",
     "key": "space space",
     "when": "editorTextFocus && vim.mode == 'Normal'"
