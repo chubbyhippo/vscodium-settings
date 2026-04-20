@@ -2393,7 +2393,7 @@
   },
   {
     "commands": ["workbench.action.openSettings", "settings.switchToJSON"],
-    "key": "space e V",
+    "key": "space e shift+v",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
   {
