@@ -2691,8 +2691,18 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "editor.action.showHover",
+    "key": "space s d",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
     "command": "workbench.action.quickOpen",
     "key": "space s f",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "editor.action.showHover",
+    "key": "space s h",
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
 ]
