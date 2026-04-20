@@ -2647,5 +2647,20 @@
     "command": "workbench.action.closeActiveEditor",
     "key": "space q",
     "when": "inputFocus && vim.mode != 'Insert'"
+  },
+  {
+    "command": "testing.coverageAtCursor",
+    "key": "space r c",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "editor.action.refactor",
+    "key": "space r e",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "editor.action.rename",
+    "key": "space r n",
+    "when": "inputFocus && vim.mode == 'Normal'"
   }
 ]
