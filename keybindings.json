@@ -2705,4 +2705,9 @@
     "key": "space s h",
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "workbench.action.showAllSymbols",
+    "key": "space s s",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
 ]
