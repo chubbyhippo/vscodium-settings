@@ -2493,7 +2493,7 @@
   },
   {
     "command": "git.push",
-    "key": "space g P",
+    "key": "space g shift+p",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
   {
