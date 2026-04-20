@@ -2312,6 +2312,11 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "workbench.action.toggleZenMode",
+    "key": "space . z",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
     "command": "extension.vim_ctrl+6",
     "key": "space space",
     "when": "editorTextFocus && vim.mode == 'Normal'"
