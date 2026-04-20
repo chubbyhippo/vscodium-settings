@@ -2602,5 +2602,45 @@
     "command": "openInIntegratedTerminal",
     "key": "space o t",
     "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "editor.action.showHover",
+    "key": "space p h",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "editor.action.previewDeclaration",
+    "key": "space p i",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "editor.action.triggerParameterHints",
+    "key": "space p p",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "workbench.action.pinEditor",
+    "key": "space p t",
+    "when": "inputFocus && vim.mode == 'Normal' && !activeEditorIsPinned"
+  },
+  {
+    "command": "editor.action.showHover",
+    "key": "space p h",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "editor.action.previewDeclaration",
+    "key": "space p i",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "editor.action.triggerParameterHints",
+    "key": "space p p",
+    "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "command": "workbench.action.pinEditor",
+    "key": "space p t",
+    "when": "inputFocus && vim.mode == 'Normal' && !activeEditorIsPinned"
   }
 ]
