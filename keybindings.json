@@ -2392,7 +2392,10 @@
     "when": "inputFocus && vim.mode == 'Normal'"
   },
   {
-    "commands": ["workbench.action.openSettings", "settings.switchToJSON"],
+    "commands": [
+      "workbench.action.openSettings",
+      "settings.switchToJSON"
+    ],
     "key": "space e shift+v",
     "when": "inputFocus && vim.mode == 'Normal'"
   },
@@ -2502,18 +2505,14 @@
     "when": "inputFocus && vim.mode == 'Normal'"
   },
   {
-    "commands": [
-      {
-        "command": "java.test.goToTestSubject",
-        "when": "resourceExtname == '.java' && resourceFilename =~ /Test/"
-      },
-      {
-        "command": "java.test.goToTest",
-        "when": "resourceExtname == '.java'"
-      }
-    ],
+    "command": "java.test.goToTest",
     "key": "space g t",
-    "when": "inputFocus && vim.mode == 'Normal'"
+    "when": "inputFocus && vim.mode == 'Normal' &&resourceExtname == '.java'"
+  },
+  {
+    "command": "java.test.goToTestSubject",
+    "key": "space g t",
+    "when": "inputFocus && vim.mode == 'Normal' && resourceExtname == '.java' && resourceFilename =~ /Test/"
   },
   {
     "commands": [
