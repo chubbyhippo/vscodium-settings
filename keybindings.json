@@ -2710,4 +2710,9 @@
     "key": "space s s",
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "workbench.action.findInFiles",
+    "key": "space s t",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
 ]
