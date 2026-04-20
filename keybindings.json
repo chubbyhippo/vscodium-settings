@@ -2690,4 +2690,9 @@
     "key": "space s a",
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
+  {
+    "command": "workbench.action.quickOpen",
+    "key": "space s f",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
 ]
