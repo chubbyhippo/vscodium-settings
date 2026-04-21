@@ -2382,6 +2382,11 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "outline.focus",
+    "key": "space a o",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
     "command": "workbench.view.explorer",
     "key": "space a p",
     "when": "editorTextFocus && vim.mode == 'Normal'"
