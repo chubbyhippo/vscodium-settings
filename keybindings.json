@@ -2831,6 +2831,11 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "workbench.action.toggleZenMode",
+    "key": "space t z",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
     "command": "workbench.action.unpinEditor",
     "key": "space u p",
     "when": "editorTextFocus && vim.mode == 'Normal' && activeEditorIsPinned"
