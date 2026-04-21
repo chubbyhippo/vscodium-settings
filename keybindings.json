@@ -2586,8 +2586,6 @@
       "commands": [
         "outline.removeView",
         "timeline.removeView",
-        "javaProjectExplorer.removeView",
-        "mavenProjects.removeView",
         "workbench.action.closeAuxiliaryBar",
         "workbench.action.closePanel",
         "workbench.action.closeSidebar"
