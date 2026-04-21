@@ -2756,6 +2756,11 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "testing.runAtCursor",
+    "key": "space r r",
+    "when": "filesExplorerFocus"
+  },
+  {
     "command": "java.debug.runJavaFile",
     "key": "space r r",
     "when": "editorTextFocus && vim.mode == 'Normal' && resourceExtname == '.java'"
