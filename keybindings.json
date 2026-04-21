@@ -2491,14 +2491,10 @@
     "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
-    "commands": [
-      {
-        "command": "editor.action.codeAction",
-        "args": {
-          "kind": "refactor.extract.function"
-        }
-      }
-    ],
+    "args": {
+      "kind": "refactor.extract.function"
+    },
+    "command": "editor.action.codeAction",
     "key": "space e m",
     "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
