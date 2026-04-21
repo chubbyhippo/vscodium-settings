@@ -6,6 +6,7 @@
   "editor.lineHeight": 1.2,
   "editor.minimap.enabled": false,
   "editor.mouseWheelZoom": true,
+  "explorer.autoReveal": true,
   "files.autoSave": "afterDelay",
   "http.proxyStrictSSL": false,
   "git.openRepositoryInParentFolders": "always",
