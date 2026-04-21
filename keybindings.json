@@ -2746,6 +2746,11 @@
     "when": "editorTextFocus && vim.mode == 'Normal' && resourceExtname == '.java'"
   },
   {
+    "command": "workbench.action.terminal.runSelectedText",
+    "key": "space r t",
+    "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+  },
+  {
     "command": "workbench.debug.welcome.focus",
     "key": "space r u",
     "when": "editorTextFocus && vim.mode == 'Normal'"
