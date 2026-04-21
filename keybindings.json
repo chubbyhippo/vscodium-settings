@@ -2726,6 +2726,11 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "testing.coverageAll",
+    "key": "space r c",
+    "when": "filesExplorerFocus"
+  },
+  {
     "command": "editor.action.refactor",
     "key": "space r e",
     "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
