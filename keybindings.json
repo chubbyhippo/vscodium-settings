@@ -2746,11 +2746,6 @@
     "when": "editorTextFocus && vim.mode == 'Normal' && resourceExtname == '.java'"
   },
   {
-    "command": "markdown.run.command",
-    "key": "space r r",
-    "when": "editorTextFocus && vim.mode == 'Normal' && resourceExtname == '.md'"
-  },
-  {
     "command": "workbench.debug.welcome.focus",
     "key": "space r u",
     "when": "editorTextFocus && vim.mode == 'Normal'"
