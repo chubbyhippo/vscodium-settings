@@ -369,10 +369,6 @@
           }
         }
       ]
-    },
-    {
-      "before": ["<leader>", "r", "e"],
-      "commands": ["editor.action.refactor"]
     }
   ],
   "vim.leader": "<space>",
