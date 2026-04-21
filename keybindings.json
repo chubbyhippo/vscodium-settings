@@ -2748,7 +2748,7 @@
   {
     "command": "workbench.action.terminal.runSelectedText",
     "key": "space r t",
-    "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine')"
   },
   {
     "command": "workbench.debug.welcome.focus",
