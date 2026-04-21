@@ -2758,7 +2758,7 @@
   {
     "command": "workbench.action.replaceInFiles",
     "key": "space r w",
-    "when": "editorTextFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
     "command": "workbench.action.showCommands",
