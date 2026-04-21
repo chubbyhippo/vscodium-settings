@@ -49,7 +49,7 @@
     {
       "before": ["[", "e"],
       "commands": ["editor.action.marker.prev"]
-    }, 
+    },
     {
       "before": ["]", "d"],
       "commands": ["editor.action.accessibleDiffViewer.next"]
@@ -377,10 +377,6 @@
     {
       "before": ["<leader>", "r", "w"],
       "commands": ["workbench.action.replaceInFiles"]
-    },
-    {
-      "before": ["<leader>", "s", "t"],
-      "commands": ["workbench.action.findInFiles"]
     }
   ],
   "vim.leader": "<space>",
