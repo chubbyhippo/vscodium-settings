@@ -2721,6 +2721,11 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "testing.runAll",
+    "key": "space r a",
+    "when": "filesExplorerFocus"
+  },
+  {
     "command": "testing.coverageAtCursor",
     "key": "space r c",
     "when": "editorTextFocus && vim.mode == 'Normal'"
