@@ -225,10 +225,6 @@
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": ["H"],
-      "after": ["^"]
-    },
-    {
       "before": ["`"],
       "after": ["S", "`"]
     },
