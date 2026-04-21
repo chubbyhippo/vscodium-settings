@@ -155,10 +155,6 @@
       "after": ["N", "z", "z", "z", "v"]
     },
     {
-      "before": ["["],
-      "commands": ["editor.action.marker.prev"]
-    },
-    {
       "before": ["]"],
       "commands": ["editor.action.marker.next"]
     },
