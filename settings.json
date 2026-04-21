@@ -373,10 +373,6 @@
     {
       "before": ["<leader>", "r", "e"],
       "commands": ["editor.action.refactor"]
-    },
-    {
-      "before": ["<leader>", "r", "w"],
-      "commands": ["workbench.action.replaceInFiles"]
     }
   ],
   "vim.leader": "<space>",
