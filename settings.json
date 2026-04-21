@@ -321,17 +321,6 @@
           }
         }
       ]
-    },
-    {
-      "before": ["<leader>", "e", "m"],
-      "commands": [
-        {
-          "command": "editor.action.codeAction",
-          "args": {
-            "kind": "refactor.extract.function"
-          }
-        }
-      ]
     }
   ],
   "vim.leader": "<space>",
