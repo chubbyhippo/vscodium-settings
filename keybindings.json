@@ -2503,14 +2503,10 @@
     "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
-    "commands": [
-      {
-        "command": "editor.action.codeAction",
-        "args": {
-          "kind": "refactor.introduce"
-        }
-      }
-    ],
+    "args": {
+      "kind": "refactor.introduce"
+    },
+    "command": "editor.action.codeAction",
     "key": "space e p",
     "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
