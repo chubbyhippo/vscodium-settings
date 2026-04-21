@@ -2788,7 +2788,7 @@
   {
     "command": "workbench.action.findInFiles",
     "key": "space s t",
-    "when": "editorTextFocus && vim.mode == 'Insert'"
+    "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
   },
   {
     "command": "editor.debug.action.toggleBreakpoint",
