@@ -2387,6 +2387,11 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "workbench.panel.markers.view.focus",
+    "key": "space a shift+p",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
     "command": "outline.focus",
     "key": "space a s",
     "when": "editorTextFocus && vim.mode == 'Normal'"
