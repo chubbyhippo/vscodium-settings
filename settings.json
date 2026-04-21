@@ -299,17 +299,6 @@
     {
       "before": ["}"],
       "after": ["S", "}"]
-    },
-    {
-      "before": ["<leader>", "e", "c"],
-      "commands": [
-        {
-          "command": "editor.action.codeAction",
-          "args": {
-            "kind": "refactor.extract.constant"
-          }
-        }
-      ]
     }
   ],
   "vim.leader": "<space>",
