@@ -234,40 +234,40 @@
   "vim.useSystemClipboard": true,
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "after": ["`", "S"],
-      "before": ["`"]
+      "before": ["}"],
+      "after": ["}", "S"]
     },
     {
-      "after": ["'", "S"],
-      "before": ["'"]
+      "before": ["{"],
+      "after": ["{", "S"]
     },
     {
-      "after": ["\"", "S"],
-      "before": ["\""]
+      "before": ["]"],
+      "after": ["S", "]"]
     },
     {
-      "after": ["(", "S"],
-      "before": ["("]
+      "before": ["["],
+      "after": ["S", "["]
     },
     {
-      "after": [")", "S"],
-      "before": [")"]
+      "before": [")"],
+      "after": ["S", ")"]
     },
     {
-      "after": ["[", "S"],
-      "before": ["["]
+      "before": ["("],
+      "after": ["S", "("]
     },
     {
-      "after": ["]", "S"],
-      "before": ["]"]
+      "before": ["\""],
+      "after": ["S", "\""]
     },
     {
-      "after": ["S", "{"],
-      "before": ["{"]
+      "before": ["'"],
+      "after": ["S", "'"]
     },
     {
-      "after": ["S", "}"],
-      "before": ["}"]
+      "before": ["`"],
+      "after": ["S", "`"]
     }
   ],
   "window.commandCenter": false,
