@@ -2595,6 +2595,11 @@
   },
   {
     "command": "explorer.newFile",
+    "key": "space n d",
+    "when": "filesExplorerFocus"
+  },
+  {
+    "command": "explorer.newFile",
     "key": "space n f",
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
