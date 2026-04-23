@@ -2457,6 +2457,11 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "deleteFile",
+    "key": "space d f",
+    "when": "filesExplorerFocus"
+  },
+  {
     "command": "numberedBookmarks.clearFromAllFiles",
     "key": "space d m",
     "when": "editorTextFocus && vim.mode == 'Normal'"
