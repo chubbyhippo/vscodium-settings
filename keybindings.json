@@ -2604,6 +2604,11 @@
     "when": "filesExplorerFocus"
   },
   {
+    "command": "explorer.newFolder",
+    "key": "space n shift+f",
+    "when": "filesExplorerFocus"
+  },
+  {
     "command": "workbench.action.terminal.new",
     "key": "space n t",
     "when": "editorTextFocus && vim.mode == 'Normal'"
