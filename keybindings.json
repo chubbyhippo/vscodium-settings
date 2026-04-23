@@ -2591,6 +2591,11 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "notebook.cell.insertCodeCellBelow",
+    "key": "space i c",
+    "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0"
+  },
+  {
     "args": {
       "kind": "refactor.inline"
     },
