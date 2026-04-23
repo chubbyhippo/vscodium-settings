@@ -2432,6 +2432,11 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "notebook.clearAllCellsOutputs",
+    "key": "space c a",
+    "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0"
+  },
+  {
     "command": "openEditors.closeAll",
     "key": "space c shift+a",
     "when": "editorTextFocus && vim.mode == 'Normal'"
