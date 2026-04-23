@@ -6,7 +6,7 @@ curl https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/
 ```sh
 curl https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/main/install-default-extensions.sh | /usr/bin/env sh
 ```
-# Uninstall extensions
+# Uninstall all extensions
 ```sh
 codium --list-extensions | xargs -L 1 codium --uninstall-extension;codium --list-extensions | xargs -L 1 codium --uninstall-extension
 ```
