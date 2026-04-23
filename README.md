@@ -3,7 +3,7 @@
 ```shell
 curl https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/main/install.sh | /usr/bin/env sh
 ```
-# Install extensions
+# Install default extensions
 ## basic
 ```curl
 curl https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/main/install-default-extensions.sh | /usr/bin/env sh
