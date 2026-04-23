@@ -19,3 +19,7 @@ curl https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/
 ```sh
 curl https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/main/extensions/java.sh | /usr/bin/env sh
 ```
+### python
+```sh
+curl https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/main/extensions/python.sh | /usr/bin/env sh
+```
