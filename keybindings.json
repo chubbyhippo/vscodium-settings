@@ -2649,6 +2649,46 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "notebook.cell.insertCodeCellBelow",
+    "key": "space n c",
+    "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0"
+  },
+  {
+    "command": "notebook.cell.insertCodeCellBelow",
+    "key": "space n c",
+    "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
+  },
+  {
+    "command": "notebook.cell.insertCodeCellAbove",
+    "key": "space n shift+c",
+    "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0"
+  },
+  {
+    "command": "notebook.cell.insertCodeCellAbove",
+    "key": "space n shift+c",
+    "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
+  },
+  {
+    "command": "notebook.cell.insertMarkdownCellBelow",
+    "key": "space n m",
+    "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0"
+  },
+  {
+    "command": "notebook.cell.insertMarkdownCellBelow",
+    "key": "space n m",
+    "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
+  },
+  {
+    "command": "notebook.cell.insertMarkdownCellAbove",
+    "key": "space n shift+m",
+    "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0"
+  },
+  {
+    "command": "notebook.cell.insertMarkdownCellAbove",
+    "key": "space n shift+m",
+    "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
+  },
+  {
     "command": "explorer.newFolder",
     "key": "space n d",
     "when": "editorTextFocus && vim.mode == 'Normal'"
