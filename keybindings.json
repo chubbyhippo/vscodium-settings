@@ -2729,6 +2729,11 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
+    "command": "renameFile",
+    "key": "space r n",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
     "command": "testing.runAtCursor",
     "key": "space r r",
     "when": "editorTextFocus && vim.mode == 'Normal'"
