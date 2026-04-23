@@ -2616,6 +2616,26 @@
     "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0"
   },
   {
+    "command": "notebook.cell.insertCodeCellBelow",
+    "key": "space i c",
+    "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
+  },
+  {
+    "command": "notebook.cell.insertCodeCellAbove",
+    "key": "space i shift+c",
+    "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
+  },
+  {
+    "command": "notebook.cell.insertMarkdownCellBelow",
+    "key": "space i m",
+    "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
+  },
+  {
+    "command": "notebook.cell.insertMarkdownCellAbove",
+    "key": "space i shift+m",
+    "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
+  },
+  {
     "args": {
       "kind": "refactor.inline"
     },
