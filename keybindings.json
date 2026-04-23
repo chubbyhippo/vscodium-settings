@@ -2467,6 +2467,11 @@
     "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0"
   },
   {
+    "command": "notebook.cell.delete",
+    "key": "space d c",
+    "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
+  },
+  {
     "command": "deleteFile",
     "key": "space d f",
     "when": "filesExplorerFocus"
