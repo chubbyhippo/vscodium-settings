@@ -2879,6 +2879,11 @@
     "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0"
   },
   {
+    "command": "rest-client.request",
+    "key": "space r r",
+    "when": "editorTextFocus && editorLangId == 'http'"
+  },
+  {
     "command": "workbench.action.terminal.runSelectedText",
     "key": "space r t",
     "when": "editorTextFocus && (vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine')"
