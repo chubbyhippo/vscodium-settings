@@ -39,7 +39,8 @@ printf '%s\n' "$settings_json_destination"
 
 RAW_SETTINGS_URL=https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/main
 
-# Download settings.json using curl
+# Create the destination directory and download settings.json
+mkdir -p "$(dirname "$settings_json_destination")"
 curl -k "$RAW_SETTINGS_URL/settings.json" -o "$settings_json_destination"
 
 # Install basic VSCodium extensions
