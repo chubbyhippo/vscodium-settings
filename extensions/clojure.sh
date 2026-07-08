@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 RAW_SETTINGS_URL=https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/main
 curl -k "$RAW_SETTINGS_URL/install-default-extensions.sh" | sh

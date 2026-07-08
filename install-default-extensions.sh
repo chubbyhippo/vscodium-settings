@@ -1,7 +1,5 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
-# keybindings
-codium --force --install-extension vscodevim.vim
 # github theme
 codium --force --install-extension GitHub.github-vscode-theme
 # material icon theme
