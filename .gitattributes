@@ -1,0 +1,4 @@
+# DrvFS trees get rewritten to CRLF by Windows tools; keep git blind to it
+* text=auto
+# scripts are piped straight to interpreters — force LF
+*.sh text eol=lf
