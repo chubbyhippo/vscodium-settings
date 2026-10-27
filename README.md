@@ -10,16 +10,3 @@ curl https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/
 ```sh
 codium --list-extensions | xargs -L 1 codium --uninstall-extension;codium --list-extensions | xargs -L 1 codium --uninstall-extension
 ```
-## Install extensions
-### clojure
-```sh
-curl https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/main/extensions/clojure.sh | /usr/bin/env sh
-```
-### java
-```sh
-curl https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/main/extensions/java.sh | /usr/bin/env sh
-```
-### python
-```sh
-curl https://raw.githubusercontent.com/chubbyhippo/vscodium-settings/refs/heads/main/extensions/python.sh | /usr/bin/env sh
-```
