@@ -8,9 +8,6 @@ codium --force --install-extension GitHub.github-vscode-theme
 codium --force --install-extension PKief.material-icon-theme
 # sonarqube
 codium --force --install-extension SonarSource.sonarlint-vscode
-# git
-codium --force --install-extension asispts.neo-git-graph
-codium --force --install-extension eamodio.gitlens
 # numbered bookmark
 codium --force --install-extension alefragnani.numbered-bookmarks
 # docker
